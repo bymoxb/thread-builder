@@ -16,14 +16,9 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="max-w-4xl border border-black mx-auto py-4">
+  <body class="container mx-auto py-4 h-screen">
     <slot />
   </body>
 </html>
 
-<style is:global>
-  html,
-  body {
-    height: 100vh;
-  }
-</style>
+<style is:global></style>
